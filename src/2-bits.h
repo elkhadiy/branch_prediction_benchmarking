@@ -21,7 +21,7 @@ class my_predictor : public branch_predictor {
 				SNT // 11
 		  };
 		  // Constructeur
-		  // 2^table_bits entrées de 1 bits
+		  // 2^table_bits entrées de STATE
 		  my_predictor (unsigned int bits, unsigned int l) :
 				table_bits(bits), // Alloue et met à zéro la table
 				table(1<<bits, SNT)
